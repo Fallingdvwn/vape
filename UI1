@@ -7,6 +7,20 @@ local Mouse = LocalPlayer:GetMouse()
 local PresetColor = Color3.fromRGB(44, 120, 224)
 local CloseBind = Enum.KeyCode.RightControl
 
+
+
+local function DestroyYep()
+    for x = 1,69 do 
+        if game.CoreGui:FindFirstChild("ui") then game.CoreGui:FindFirstChild("ui"):Destroy() end
+    end
+end
+
+DestroyYep()
+
+wait(0.069)
+
+
+
 local ui = Instance.new("ScreenGui")
 ui.Name = "ui"
 ui.Parent = game.CoreGui
